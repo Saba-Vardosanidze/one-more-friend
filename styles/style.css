@@ -1,0 +1,126 @@
+.hero-container {
+  background: linear-gradient(
+    130deg,
+    rgba(252, 238, 213, 1) 6%,
+    rgba(252, 238, 213, 1) 75%,
+    rgba(255, 231, 186, 1) 100%
+  );
+}
+.hero-container header {
+  max-width: 1220px;
+  height: 100px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.header-left-container {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  position: relative;
+}
+.header-left-container nav ul {
+  display: flex;
+  gap: 48px;
+  margin-left: 48px;
+}
+.header-left-container nav ul li a {
+  text-decoration: none;
+  color: #003459;
+  font-weight: 700;
+}
+.header-right-container {
+  display: flex;
+  width: 505px;
+  height: 40px;
+  align-items: center;
+}
+.header-right-container .input-container {
+  position: relative;
+  input[type="search"]::-webkit-search-decoration,
+  input[type="search"]::-webkit-search-cancel-button,
+  input[type="search"]::-webkit-search-results-button,
+  input[type="search"]::-webkit-search-results-decoration {
+    -webkit-appearance: none;
+  }
+}
+.input-container .search-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translate(0, -50%);
+}
+.input-container .x-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  width: 20px;
+  height: 20px;
+  transform: translate(0, -50%);
+  visibility: hidden;
+  opacity: 0;
+  rotate: 90deg;
+  transition: 500ms;
+  color: #667479;
+}
+.input-container:has(input:not(:placeholder-shown)) .x-icon {
+  visibility: visible;
+  opacity: 1;
+  rotate: 0deg;
+}
+.input-container:has(input:placeholder-shown) .search-icon {
+  opacity: 1;
+  pointer-events: all;
+  visibility: visible;
+}
+.input-container:has(input:not(placeholder-shown)) .search-icon {
+  opacity: 0;
+  visibility: hidden;
+  transition: 300ms;
+}
+.input-container input {
+  width: 280px;
+  padding: 5px 48px;
+  height: 44px;
+  border-radius: 46px;
+  margin-right: 14px;
+  outline: none;
+  border: none;
+}
+.header-right-container button {
+  width: 211px;
+  height: 44px;
+  background-color: #003459;
+  border-radius: 57px;
+  border: none;
+}
+.header-right-container button p {
+  color: white;
+  font-weight: bold;
+}
+.hero {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0px 20px;
+  display: flex;
+}
+.hero-left-container {
+  flex: 1;
+  display: flex;
+}
+.hero-right-container {
+  flex: 1;
+  display: flex;
+  position: relative;
+  z-index: 99;
+}
+.hero-rectangle {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.hero-background {
+  z-index: 10;
+}
