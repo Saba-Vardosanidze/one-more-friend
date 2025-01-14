@@ -1,3 +1,7 @@
+@font-face {
+  src: url(../assets/fonts/Gilroy-Regular.ttf);
+  font-family: Gilroy;
+}
 .hero-container {
   background: linear-gradient(
     130deg,
@@ -20,16 +24,18 @@
   height: 40px;
   align-items: center;
   position: relative;
+  font-family: Gilroy;
 }
 .header-left-container nav ul {
   display: flex;
   gap: 48px;
   margin-left: 48px;
+  font-weight: 700;
 }
 .header-left-container nav ul li a {
   text-decoration: none;
   color: #003459;
-  font-weight: 700;
+  font-weight: bold;
 }
 .header-right-container {
   display: flex;
@@ -109,6 +115,51 @@
 .hero-left-container {
   flex: 1;
   display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+  height: 595px;
+}
+.hero-left-container h2 {
+  font-size: 50px;
+  color: #002a48;
+  line-height: 68px;
+  height: 132px;
+  margin-bottom: 24px;
+}
+.hero-left-container span {
+  font-size: 46px;
+  color: #002a48;
+  line-height: 60px;
+}
+.hero-left-container p {
+  line-height: 24px;
+  width: 480px;
+  height: 71px;
+}
+.buttons-container {
+  display: flex;
+  gap: 16px;
+  margin-top: 34px;
+}
+.buttons-container .View-Info-Button {
+  width: 165px;
+  height: 48px;
+  border-radius: 57px;
+  border: 2px solid #003459;
+  background-color: #fffff100;
+  padding: 10px 30px 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #003459;
+}
+.buttons-container .Explore-Container {
+  width: 165px;
+  height: 48px;
+  border-radius: 57px;
+  border: none;
+  background-color: #003459;
+  color: white;
 }
 .hero-right-container {
   flex: 1;
@@ -116,11 +167,17 @@
   position: relative;
   z-index: 99;
 }
-.hero-rectangle {
+.hero-rectangle2 {
   position: absolute;
   left: 0;
   bottom: 0;
 }
 .hero-background {
   z-index: 10;
+}
+.hero-rectangle1 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 8;
 }
